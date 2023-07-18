@@ -32,8 +32,6 @@ public class Chessboard{
             board[1][i] = new Pawn(1);
             board[6][i] = new Pawn(0);
         }
-
-
     }
 
     @Override
