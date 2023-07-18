@@ -1,5 +1,8 @@
 public interface ChessPiece {
-    void move();
-    void take();
+    void move(int row, int col);
+    void take(int row, int col);
+
+    int getRow();
+    int getcol();
 
 }

@@ -11,13 +11,24 @@ public class King implements ChessPiece{
         this.color = color;
     }
 
+
     @Override
-    public void move() {
+    public void move(int row, int col) {
 
     }
 
     @Override
-    public void take() {
+    public void take(int row, int col) {
 
+    }
+
+    @Override
+    public int getRow() {
+        return 0;
+    }
+
+    @Override
+    public int getcol() {
+        return 0;
     }
 }
