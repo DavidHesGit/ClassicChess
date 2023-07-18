@@ -8,6 +8,10 @@ public class Bishop implements ChessPiece{
         return ((color == 0)? "W": "B") + name;
     }
 
+    public Bishop(int color) {
+        this.color = color;
+    }
+
     @Override
     public void move() {
 

@@ -3,34 +3,34 @@ import java.awt.*;
 
 public class Chessboard{
     //Settings
-    private String[][]board;
+    private ChessPiece[][]board;
     public Chessboard(){
-        board = new String[8][8];
+        board = new ChessPiece[8][8];
         resetBoard();
     }
 
     private void resetBoard(){
-        board[0][0] = "BR";
-        board[0][1] = "BN";
-        board[0][2] = "BB";
-        board[0][3] = "BQ";
-        board[0][4] = "BK";
-        board[0][5] = "BB";
-        board[0][6] = "BN";
-        board[0][7] = "BR";
+        board[0][0] = new Rook(1);
+        board[0][1] = new Knight(1);
+        board[0][2] = new Bishop(1);
+        board[0][3] = new Queen(1);
+        board[0][4] = new King(1);
+        board[0][5] = new Bishop(1);
+        board[0][6] = new Knight(1);
+        board[0][7] = new Rook(1);
 
-        board[7][0] = "WR";
-        board[7][1] = "WN";
-        board[7][2] = "WB";
-        board[7][3] = "WQ";
-        board[7][4] = "WK";
-        board[7][5] = "WB";
-        board[7][6] = "WN";
-        board[7][7] = "WR";
+        board[7][0] = new Rook(0);
+        board[7][1] = new Knight(0);
+        board[7][2] = new Bishop(0);
+        board[7][3] = new Queen(0);
+        board[7][4] = new King(0);
+        board[7][5] = new Bishop(0);
+        board[7][6] = new Knight(0);
+        board[7][7] = new Rook(0);
 
         for (int i = 0; i < 8; i++) {
-            board[1][i] = "BP";
-            board[6][i] = "WP";
+            board[1][i] = new Pawn(1);
+            board[6][i] = new Pawn(0);
         }
 
 

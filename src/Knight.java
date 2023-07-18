@@ -8,6 +8,10 @@ public class Knight implements ChessPiece{
         return ((color == 0)? "W": "B") + name;
     }
 
+    public Knight(int color) {
+        this.color = color;
+    }
+
     @Override
     public void move() {
 

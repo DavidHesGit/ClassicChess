@@ -8,6 +8,10 @@ public class Pawn implements ChessPiece{
         return ((color == 0)? "W": "B") + name;
     }
 
+    public Pawn(int color) {
+        this.color = color;
+    }
+
     @Override
     public void move() {
 

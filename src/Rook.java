@@ -8,6 +8,10 @@ public class Rook implements ChessPiece{
         return ((color == 0)? "W": "B") + name;
     }
 
+    public Rook(int color) {
+        this.color = color;
+    }
+
     @Override
     public void move() {
 
